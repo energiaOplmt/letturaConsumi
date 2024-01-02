@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      p {
+        text-align: center;
+        color: #555;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:disabled {
+        background-color: #ccc;
+      }
+      #status {
+        margin-top: 20px;
+        color: green;
+        display: none;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .sotto {
+        font-size: 12px;
+        text-align: center;
+        margin: 20px 0 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div 
+    <div class="leggiConsumi" style="text-align: center">
+      Clicca sul pulsante "Avvia Lettura" per avviare il processo di lettura degli ultimi 18
+      mesi di consumi
+    </p>
+      <button id="sendApi">Avvia lettura</button>
+    </div>
+    <div id="status">
+      <b>Congratulazioni, il processo e' stato avviato!<br> Attendi qualche minuto. Il
+      download del file partira' automaticamente.</b>
+    </div>
+    <div class="sotto">
+      <hr />
+      <p style="margin-bottom: 10px;">
+        Questa estensione e' open source e puoi trovarla su <a href="#" id="autoconsumoLink">GitHub</a
+        >
+      </p>
+    </div>
+  </body>
+</html>

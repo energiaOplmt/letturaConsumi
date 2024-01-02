@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Consumo",
+    "version": "1.0.0",
+    "permissions": [
+        "cookies",
+        "tabs",
+        "scripting",
+        "webRequest",
+        "notifications",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}

@@ -1,7 +1,7 @@
 window.onload = async function () {
     document.getElementById("sendApi").addEventListener("click", sendApi);
     // document.getElementById("autoconsumoLink").addEventListener("click", () => {
-    //     chrome.tabs.create({ url: "https://github.com/energiaOplmt/enelAutoconsumo" });
+    //     chrome.tabs.create({ url: "https://github.com/energiaOplmt/letturaConsumi" });
     // });
     // document.getElementById("linkConsumi").addEventListener("click", () => {
     //     chrome.tabs.create({ url: "https://private.e-distribuzione.it/PortaleClienti/s/curvedicarico" });

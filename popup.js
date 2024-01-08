@@ -2,7 +2,7 @@ window.onload = async function () {
     document.getElementById("sendApi").addEventListener("click", sendApi);
     document.getElementById("autoconsumoLink").addEventListener("click", () => {
         chrome.tabs.create({ url: "https://github.com/energiaOplmt/letturaConsumi" });
-     });
+    });
     // document.getElementById("linkConsumi").addEventListener("click", () => {
     //     chrome.tabs.create({ url: "https://private.e-distribuzione.it/PortaleClienti/s/curvedicarico" });
     // });
@@ -154,7 +154,7 @@ async function sendApiToPage(response) {
                 csvArray.push(valueArray);
                 setTimeout(async () => {
                     await getEnergia(context, times - 1);
-                }, 20000);
+                }, 20000 + Math.floor(Math.random() * 3000));
             } catch (e) {
                 console.log("Errore:", e);
                 alert("Errore. Aggiornare la pagina e riprovare. Se il problema persiste, contattare l'autore");
